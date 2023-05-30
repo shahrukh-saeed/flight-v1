@@ -4,6 +4,7 @@ import {useState, useEffect} from 'react';
 import Layout from './components/Layout';
 import {Routes, Route} from 'react-router-dom';
 import Home from './components/home/Home';
+import SearchFlights from './components/search-flights/SearchFlights';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route path="/" element={<Home flights={flights}/>} ></Route>
+          <Route path="/search-flights" element={<SearchFlights flights={flights}/>} ></Route>
         </Route>
       </Routes>
     </div>
