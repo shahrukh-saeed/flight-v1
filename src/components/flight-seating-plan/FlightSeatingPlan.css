@@ -1,0 +1,17 @@
+.seats {
+    border: solid;
+    width: fit-content;
+    padding: 50px;
+    font-size: 25px;
+    margin: 0 auto;
+    border-radius: 150px;
+    margin-top: 50px;
+}
+
+.X {
+    color: red;
+}
+
+.O {
+    color: green;
+}
