@@ -3,7 +3,7 @@ import "./SearchFlights.css";
 import TitleBar from "../titleBar/TitleBar";
 
 
-const SearchFlights = ({ flights, onViewSeatingPlan}) => {
+const SearchFlights = ({ flights, onViewSeatingPlan }) => {
     return (
         <div>
             <TitleBar/>

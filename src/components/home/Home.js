@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <TitleBar/>
             <Link to="/search-flights"><div className="button"><button type="button" className="btn btn-primary btn-block">Search Flights</button></div></Link>
-            <div className="button"><button type="button" className="btn btn-primary btn-block">Add Flights</button></div>
+            <Link to="/add-flight"><div className="button"><button type="button" className="btn btn-primary btn-block">Add Flight</button></div></Link>
             <div className="button"><button type="button" className="btn btn-primary btn-block">Search Passengers</button></div>
             <div className="button"><button type="button" className="btn btn-primary btn-block">Add Passengers</button></div>
         </div>

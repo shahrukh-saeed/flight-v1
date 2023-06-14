@@ -7,6 +7,7 @@ import Home from './components/home/Home';
 import SearchFlights from './components/search-flights/SearchFlights';
 import FlightSeatingPlan from './components/flight-seating-plan/FlightSeatingPlan';
 import { useNavigate } from 'react-router-dom';
+import AddFlight from './components/add-flight/AddFlight';
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
           <Route path="/" element={<Home flights={flights}/>} ></Route>
           <Route path="/search-flights" element={<SearchFlights flights={flights} onViewSeatingPlan={handleViewSeatingPlan} />} ></Route>
           {selectedFlight && <Route path="/flight-seating-plan" element={<FlightSeatingPlan flight={selectedFlight} passengers={passengers} />} />}
+          <Route path="/add-flight" element={<AddFlight/>}></Route>
         </Route>
       </Routes>
     </div>
