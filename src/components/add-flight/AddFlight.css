@@ -1,0 +1,14 @@
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+label {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.alert {
+    margin: 25px;
+}
