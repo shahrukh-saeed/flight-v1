@@ -16,7 +16,7 @@ function App() {
   const [selectedFlight, setSelectedFlight] = useState(null);
   const navigate = useNavigate();
 
-  const getFlights = async () =>{
+  const getFlights = async () => {
 
     try{
 
@@ -32,6 +32,7 @@ function App() {
 
   useEffect(() => {
     getFlights();
+    getPassengers();
   },[])
 
   const getPassengers = async () =>{
@@ -47,10 +48,6 @@ function App() {
     }
 
   }
-
-  useEffect(() => {
-    getPassengers();
-  },[])
 
   const handleViewSeatingPlan = (flight) => {
     setSelectedFlight(flight);
