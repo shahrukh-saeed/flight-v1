@@ -41,13 +41,13 @@ const AddFlights = () => {
     return (
         <div>
             <TitleBar/>
-            <form onSubmit={handleSubmit}>
+            <form className="bg-light" onSubmit={handleSubmit}>
                 <label>Flight Number <input required type="text" value={flightNum} onChange={handleFlightNumChange}></input></label><br></br>
                 <label>Model <input required type="text" value={model} onChange={handleModel}></input></label><br></br>
                 <label>Rows <input required type="text" value={rows} onChange={handleRows}></input></label><br></br>
                 <label>Col <input required type="text" value={col} onChange={handleCol}></input></label><br></br>
-                <input type="submit" value="Submit"></input>
-                {isSubmitted && <p>Flight added successfully.</p>}
+                <input className="btn btn-primary" type="submit" value="Submit"></input>
+                {isSubmitted && <p className="alert alert-success" >Flight added successfully.</p>}
             </form>
         </div>
     )
