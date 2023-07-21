@@ -11,7 +11,7 @@ const TitleBar = () => {
           Airline Seating Reservation System
         </a>
 
-        <a class="nav-link" href="/">Home</a>
+        <a className="nav-link" href="/">Home</a>
       </nav>
     </div>
   );

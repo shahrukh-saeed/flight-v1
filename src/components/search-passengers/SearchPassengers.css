@@ -1,0 +1,11 @@
+.passengerDetails {
+    display: flex;
+    border-bottom-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    text-align:left;
+}

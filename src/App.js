@@ -8,6 +8,8 @@ import SearchFlights from './components/search-flights/SearchFlights';
 import FlightSeatingPlan from './components/flight-seating-plan/FlightSeatingPlan';
 import { useNavigate } from 'react-router-dom';
 import AddFlight from './components/add-flight/AddFlight';
+import SearchPassengers from './components/search-passengers/SearchPassengers';
+import AddPassenger from './components/add-passenger/AddPassenger';
 
 function App() {
 
@@ -30,11 +32,6 @@ function App() {
 
   }
 
-  useEffect(() => {
-    getFlights();
-    getPassengers();
-  },[])
-
   const getPassengers = async () =>{
 
     try{
@@ -54,6 +51,11 @@ function App() {
     navigate('/flight-seating-plan');
   }
 
+  useEffect(() => {
+    getFlights();
+    getPassengers();
+  },[])
+
   return (
     <div className="App">
       <Routes>
@@ -62,6 +64,8 @@ function App() {
           <Route path="/search-flights" element={<SearchFlights flights={flights} onViewSeatingPlan={handleViewSeatingPlan} />} ></Route>
           {selectedFlight && <Route path="/flight-seating-plan" element={<FlightSeatingPlan flight={selectedFlight} passengers={passengers} />} />}
           <Route path="/add-flight" element={<AddFlight/>}></Route>
+          <Route path="/search-passengers" element={<SearchPassengers passengers={passengers}/>}></Route>
+          <Route path="/add-passenger" element={<AddPassenger/>}></Route>
         </Route>
       </Routes>
     </div>
