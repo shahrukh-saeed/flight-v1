@@ -41,7 +41,7 @@ const AddFlights = () => {
     return (
         <div>
             <TitleBar/>
-            <form className="bg-light" onSubmit={handleSubmit}>
+            <form className="bg-light shadow-sm" onSubmit={handleSubmit}>
                 <label>Flight Number <input required type="text" value={flightNum} onChange={handleFlightNumChange}></input></label><br></br>
                 <label>Model <input required type="text" value={model} onChange={handleModel}></input></label><br></br>
                 <label>Rows <input required type="text" value={rows} onChange={handleRows}></input></label><br></br>

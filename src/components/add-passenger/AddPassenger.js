@@ -40,7 +40,7 @@ export default function AddPassenger() {
     return (
         <div>
             <TitleBar/>
-            <form className="bg-light" onSubmit={handleSubmit}>
+            <form className="bg-light shadow-sm" onSubmit={handleSubmit}>
                 <label>Name <input required type="text" value={name} onChange={handleName}></input></label><br></br>
                 <label>Flight Number <input required type="text" value={flightNum} onChange={handleFlightNumChange}></input></label><br></br>
                 <label>Row <input required type="text" value={row} onChange={handleRow}></input></label><br></br>

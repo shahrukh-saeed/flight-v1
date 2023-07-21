@@ -4,7 +4,16 @@ button.btn.btn-primary.btn-block {
 }
 
 #home-options {
-    width: fit-content;
     margin: 0 auto;
     padding: 25px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home-option-button {
+    height: 200px;
+    width: 200px;
+    margin: 25px;  
 }
