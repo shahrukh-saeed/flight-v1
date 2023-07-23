@@ -16,3 +16,22 @@
     margin-bottom: auto;
     margin-top: auto;
 }
+
+#search-box {
+    width: 25%;
+    min-width: 300px;
+    margin: 20px auto;
+}
+
+#flight-info {
+    display: flex;
+}
+
+.flight-item {
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(234, 234, 234);
+    padding: 5px;
+    border-radius: 5px;
+}

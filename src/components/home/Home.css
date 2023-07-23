@@ -5,15 +5,16 @@ button.btn.btn-primary.btn-block {
 
 #home-options {
     margin: 0 auto;
-    padding: 25px;
+    padding: 50px;
     width: 90%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border-radius: 5px;
 }
 
 .home-option-button {
     height: 200px;
     width: 200px;
-    margin: 25px;  
+    margin: 25px; 
 }

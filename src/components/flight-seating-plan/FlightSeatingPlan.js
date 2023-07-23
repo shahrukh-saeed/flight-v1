@@ -23,8 +23,8 @@ const FlightSeatingPlan = ({ flight, passengers }) => {
             <div>
                 <TitleBar />
                 <h1>Flight Seating Plan</h1>
-                <div>Flight Number: {flight.flightNum}</div>
-                <div>Model: {flight.model}</div>
+                <div>Flight Number | {flight.flightNum}</div>
+                <div>Model | {flight.model}</div>
                 <div className="seats">
                 {seats.map((row, i) => (
                     <div key={i}>
