@@ -8,7 +8,7 @@ A web application which allows airline employees to register and assign seats to
 - MongoDB database utilized to keep track of flights and passengers.
 - [Backend](https://github.com/shahrukh-saeed/AirlineReservationSystem)
 
-## Preview (work in progress)
+## Preview
 
 ### Home
 ![Home](https://i.imgur.com/VJKTNSp.jpg)
